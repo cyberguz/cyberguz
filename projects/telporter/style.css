@@ -1,1 +1,1635 @@
-.main
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+        background-color: #D3D4D9;
+    }
+    header {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        height: 70px;
+        width: 100%;
+        background-color: brown;    
+    }
+    .container__esc {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;    
+    }
+    .container__esc1 {
+        background-color: darkblue;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;            
+    }
+    /*elementos de escena uno*/
+    .container__esc1--fondo {/*imagen de fondo*/
+        height: auto;
+        width: 100%;              
+        position: relative;
+        overflow: hidden;      
+    }         
+    .container__esc1--cara, .container__esc1--cejas {/*cara de personaje y cejas*/
+        height: auto;
+        width: 290px;
+        animation-name: uno;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease; 
+        animation-delay: 1s;           
+        }
+        @keyframes uno {
+        0%{
+            transform: translateY(20px);                
+        }
+        29% {
+            transform: translateY(0px);
+        }
+        86% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+    }               
+    .container__esc1--ladron {/*imagen secuestrador*/
+        height: 260px;
+        width: auto;
+        animation-name: dos;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode:forwards;*/
+        animation-delay: 1s;
+        }
+        @keyframes dos {
+        0%{
+            transform: translateX(0px);
+        }
+        29% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(250px);
+        }
+        86% {
+            transform: translateX(250px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(250px);
+            opacity: 0;
+        }
+    }
+    .container__esc1--mano {/*imagen mano de secuestrador*/
+        height: 120px;
+        width: auto;
+        animation-name: tres;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 1s;
+        }
+        @keyframes tres {
+        0%{
+           transform: translateX(0px); 
+        }
+        43%{
+           transform: translateX(0px); 
+        }
+        57%{
+           transform: translateX(-160px); 
+        }
+        86%{
+           transform: translateX(-160px);
+           opacity: 1; 
+        }
+        100% {                
+            transform: translateX(-160px);
+            opacity: 0;
+        }
+    }
+    .container__esc1--cejas {/*animacion de movimiento de cejas*/
+        animation-name: cuatro;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;   
+        /*animation-fill-mode: forwards;*/   
+        animation-delay: 1s;
+        }
+        @keyframes cuatro {
+        0%{
+            transform: translateY(20px);
+        }
+        29%{
+            transform: translateY(0px);
+        }
+        57%{
+            transform: translateY(0px);            
+        }
+        60% {
+            transform: translateY(10px);                
+        }
+        64% {
+            transform: translateY(-10px);                
+        }
+        86% {
+            transform: translateY(-10px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+    }
+    .dialogo_1 {  /*dialogo*/          
+        height: 100px;
+        width: 200px;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation-name: cinco;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;            
+        }
+        @keyframes cinco {
+        0%{
+            opacity: 0;                
+        }
+        50% {
+            opacity: 0;
+        }
+        55% {
+            transform: translate(-200px);
+            opacity: 1;
+        }
+        86% {
+            transform: translate(-200px);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-200px);
+            opacity: 0;
+        }
+    }      
+    .dialogo_1 img, .text_dialogo_1 {
+        height: 60px;
+        width: 160px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                      
+    }
+    
+    /*elementos 2da escena*/  
+    .container__esc2 {
+        background-color: green;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;/*la imagen se amolda a los limites contenedor*/   
+    }
+    .container__esc2--fondo {
+        height: 350px;
+        width: 350px;
+    }
+    .container__esc2--banco {
+        height: 50px;
+        width: auto;
+    }
+    .container__esc2--cuerpo_personaje {
+        height: 150px;
+        width: auto;
+    }
+    .container__esc2--cabeza_personaje {
+        height: 50px;
+        width: auto;
+    }
+    .container__esc2--brazo_der_secuestrador {
+        height: 28px;
+        width: auto;
+    }
+    .container__esc2--cuerpo_secuestrador {
+       height: 199px;
+       width: auto;
+    }
+    .container__esc2--cabeza_secuestrador {
+        height: 43px;
+        width: auto;
+    }
+    .container__esc2--brazo_izq_secuestrador {
+        height: 33px;
+        width: auto;
+    }
+    .dialogo_2 img, .text_dialogo_2 {
+        height: 85px;
+        width: 200px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;            
+    }
+    .dialogo_3 img, .text_dialogo_3 {
+        height: 60px;
+        width: 200px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+    }
+    .dialogo_4 img, .text_dialogo_4 {
+        height: 120px;
+        width: 160px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+    }
+    .dialogo_5 img, .text_dialogo_5 {
+        height: 60px;
+        width: 120px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+    }
+    /*animacion movimiento de brazos secuestrador*/
+    .container__esc2--brazo_izq_secuestrador, .container__esc2--brazo_der_secuestrador {
+        animation-name: seis;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        transform-origin: right bottom;
+        animation-fill-mode: initial;
+        animation-delay: 8s;            
+        }
+        @keyframes seis {
+        0% {
+            opacity: 0;
+            transform: translateX(-152px);
+        }
+        0.1% {
+            opacity: 1;
+            transform: translateX(-222px);
+        }
+        3.5% {
+            transform: translateX(-222px) rotate(-25deg);             
+        }
+        17% {
+            transform: translateX(-222px) rotate(0deg);
+        }            
+        20.5% {
+            transform: translateX(-222px) rotate(-25deg);             
+        }
+        34% {
+            transform: translateX(-222px) rotate(0deg);
+        }  
+        86% {
+            transform: translateX(-222px) rotate(0deg);
+            opacity: 1;
+        }  
+        100% {
+            transform: translateX(-222px) rotate(0deg);
+            opacity: 0;
+        }  
+    }            
+    .dialogo_2 {/*animacion dialogo 2*/
+                               
+        animation-name: siete;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 8s;            
+        }
+        @keyframes siete {
+        0% {
+            opacity: 0;
+            
+        }            
+        15.5% {
+            opacity: 0;
+            
+        }
+        16% {
+            opacity: 1;
+            transform: translateX(-200px);
+        }
+        86% {
+            opacity: 1;
+            transform: translateX(-200px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+    }              
+    
+    .container__esc2--cabeza_personaje {/*animacion movimiento de cabeza*/
+        animation-name: ocho;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;            
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 8s;            
+        }
+        @keyframes ocho {
+        0% {
+            opacity: 0;
+            transform: translateX(132px);
+        }
+        0.1% {
+            opacity: 1;
+            transform: translateX(132px);
+        }           
+        21% {
+            transform: translateX(132px) rotate(-6deg);
+        }
+        25% {
+            transform: translateX(132px) rotate(3deg);
+        }
+        28% {
+            transform: translateX(132px) rotate(6deg);
+        }            
+        32%{
+            transform: translateX(132px) rotate(-3deg);  
+        }
+        35% {
+            transform: translateX(132px) rotate(-6deg);
+        }
+        39% {
+            transform: translateX(132px) rotate(3deg);
+        }
+        42% {
+            transform: translateX(132px) rotate(6deg);
+        }      
+        46%{
+            transform: translateX(132px) rotate(-3deg);  
+        }
+        49% {
+            transform: translateX(132px) rotate(-6deg);
+        }
+        53% {
+            transform: translateX(132px) rotate(3deg);
+        }
+        56% {
+            transform: translateX(132px) rotate(6deg);
+        }      
+        60%{
+            transform: translateX(132px) rotate(-3deg);  
+        }
+        63% {
+            transform: translateX(132px) rotate(-6deg);
+        }
+        67% {
+            transform: translateX(132px) rotate(3deg);
+        }
+        70% {
+            transform: translateX(132px) rotate(6deg);
+        }          
+        86% {
+            opacity: 1;
+            transform: translateX(132px);
+        }
+        100% {                
+            opacity: 0;
+            transform: translateX(132px);
+        }        
+    }              
+    .dialogo_3 {
+                            
+        animation-name: nueve;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 8s;           
+        }
+        @keyframes nueve {
+        0% {
+            opacity: 0;
+            
+        }            
+        30%{
+            opacity: 0;      
+                    
+        }
+        35% {
+            opacity: 1;
+            transform: translateX(200px);
+        }
+        86% {
+            opacity: 1;
+            transform: translateX(200px);
+        }100% {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+    }                   
+    .container__esc2--banco, .container__esc2--cuerpo_personaje, .container__esc2--cuerpo_secuestrador, .container__esc2--cabeza_secuestrador {
+        animation-name: diez;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 8s;            
+        }
+        @keyframes diez {            
+        0% {
+            opacity: 0;
+            transform: translateX(132px);
+        }
+        0.1% {
+            opacity: 1;
+            transform: translateX(132px);
+        }
+        86% {
+            opacity: 1;
+            transform: translateX(132px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(132px);
+        }
+    }
+    .container__esc2--cuerpo_secuestrador, .container__esc2--cabeza_secuestrador {
+        animation-name: diez_y_medio;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 8s;            
+        }
+        @keyframes diez_y_medio {            
+        0% {
+            opacity: 0;
+            transform: translateX(-152px);
+        }
+        0.1% {
+            opacity: 1;
+            transform: translateX(-152px);
+        }
+        86% {
+            opacity: 1;
+            transform: translateX(-152px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-152px);
+        }
+    }     
+    /*escena 3*/    
+    .container__esc3 {
+        background-color: darkblue;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;
+    }
+    .container__esc3--fondo, .container__esc3--fondo1 {
+        height: 350px;
+        width: 350px;
+    }
+    .container__esc3--secuestrador2, .container__esc3--polo_secuestrador2, .container__esc3--secuestrador1 {/**/
+        height: 180px;
+        width: auto;
+    }
+    .container__esc3--secuestrador1 {
+        animation-name: once;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 16s; 
+    }
+        @keyframes once {
+        0%{
+            transform: translateX(0px);
+            
+        }
+        20%{
+            transform: translateX(80px);
+            
+        }
+        86%{
+            transform: translateX(80px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(80px); 
+            opacity: 0; 
+        }
+    }
+    .container__esc3--secuestrador2 {
+        animation-name: doce;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 16s; 
+    }
+        @keyframes doce {
+        0%{
+            transform: translateX(0px);                
+        }
+        20%{
+            transform: translateX(0px);                
+        }
+        40%{
+            transform: translateX(-100px);                
+        }            
+        86%{
+            transform: translateX(-100px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-100px); 
+            opacity: 0; 
+        }
+    }
+    .dialogo_4 {
+                                
+        animation-name: trece;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 16s;            
+        }
+        @keyframes trece {
+        0% {
+            opacity: 0;
+            transform: translateX(200px);
+        }            
+        39%{
+            opacity: 0;   
+            transform: translateX(200px);             
+        }
+        40% {
+            opacity: 1;
+            transform: translateX(200px);
+        }
+        86% {
+            opacity: 1;
+            transform: translateX(200px);
+        }100% {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+    }             
+    .dialogo_5 {                               
+        animation-name: catorce;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 16s;            
+        }
+        @keyframes catorce {
+        0% {
+            opacity: 0;
+        }            
+        60%{
+            opacity: 0;   
+            transform: translateX(-160px);             
+        }
+        61% {
+            opacity: 1;
+            transform: translateX(-160px);
+        }
+        86% {
+            opacity: 1;
+            transform: translateX(-160px);
+        }100% {
+            opacity: 0;
+            transform: translateX(-160px);
+        }
+    } 
+    .container__esc3--polo_secuestrador2 {                                           
+        animation-name: quince;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 16s; 
+    }
+        @keyframes quince {            
+            0%{
+            transform: translateX(0px);                
+        }
+        20%{
+            transform: translateX(0px);                
+        }
+        40%{
+            transform: translateX(-100px);                
+        }            
+        50% {
+            transform: translateX(-100px) scale(1.02);
+        }  
+        55% {
+            transform: translateX(-100px) scale(1);
+        }  
+        60% {
+            transform: translateX(-100px) scale(1.02);
+        }            
+        65%{
+            transform: translateX(-100px) scale(1);               
+        }
+        70% {
+            transform: translateX(-100px) scale(1.02);
+        }
+        75%{
+            transform: translateX(-100px) scale(1);               
+        }
+        80% {
+            transform: translateX(-100px) scale(1.02);
+        }   
+        86%{
+            transform: translateX(-100px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-100px); 
+            opacity: 0; 
+        }                
+    }
+    /*Escena 4*/
+    .container__esc4 {
+        background-color: green;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;        
+        position: relative;
+        overflow: hidden;            
+    }
+    .container__esc4--fondo, .container__esc4--fondo1 {
+        height: 350px;
+        width: 350px;
+    }
+    .container__esc4--secuestrador1 {/**/
+        height: 120px;
+        width: auto;
+    }
+    .container__esc4--personaje {/**/
+        height: auto;
+        width: 100px;
+    }
+    .dialogo_6 img, .text_dialogo_6 {
+        height: 60px;
+        width: 60px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+    }        
+    .container__esc4--personaje {
+        animation-name: dieciseis;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 24s; 
+    }
+        @keyframes dieciseis {
+        0%{
+            transform: translateX(10px);                
+        }
+        20%{
+            transform: translateX(-100px) translateY(10px);                
+        }
+        25%{
+            transform: translateX(-105px) translateY(20px);                
+        } 
+        30%{
+            transform: translateX(-110px) translateY(40px) rotate(-5deg);                
+        } 
+        35%{
+            transform: translateX(-115px) translateY(55px) rotate(-10deg);                
+        } 
+        40%{
+            transform: translateX(-120px) translateY(70px) rotate(-15deg);                
+        }       
+        45%{
+            transform: translateX(-125px) translateY(85px) rotate(-20deg);                
+        }      
+        50%{
+            transform: translateX(-130px) translateY(100px) rotate(-25deg);
+        }
+        55%{
+            transform: translateX(-135px) translateY(115px) rotate(-30deg);                         
+        } 
+        60%{
+            transform: translateX(-140px) translateY(130px) rotate(-35deg);                
+        } 
+        65%{
+            transform: translateX(-145px) translateY(145px) rotate(-40deg);                
+        }
+        70%{
+            transform: translateX(-150px) translateY(160px) rotate(-45deg);                
+        } 
+        75%{
+            transform: translateX(-155px) translateY(180px) rotate(-50deg);                
+        }
+        80%{
+            transform: translateX(-157px) translateY(200px) rotate(-53deg);
+        } 
+        85%{
+            transform: translateX(-159px) translateY(220px) rotate(-55eg);
+        } 
+        90%{
+            transform: translateX(-161px) translateY(240px) rotate(-58deg);
+        }
+        99%{
+            transform: translateX(-163px) translateY(260px) rotate(-61deg);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-165px) translateY(280px) rotate(-64deg); 
+            opacity: 0; 
+        }
+    }
+    .container__esc4--secuestrador1 {
+        animation-name: diecisiete;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 24s; 
+    }
+        @keyframes diecisiete {
+        0%{
+            transform: translateX(10px);                
+        }
+        20%{
+            transform: translateX(-10px);                
+        }
+        30%{
+            transform: translateX(-25px);                
+        }            
+        99%{
+            transform: translateX(-25px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-25px); 
+            opacity: 0; 
+        }
+    }
+    .dialogo_6 {
+                                
+        animation-name: dieciocho;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 24s;            
+        }
+        @keyframes dieciocho {
+            0%{
+            transform: translateX(10px);     
+            opacity: 0;  
+        }
+        20%{
+            transform: translateX(250px) translateY(10px);                
+            opacity: 0;
+        }
+        25%{
+            transform: translateX(245px) translateY(30px);
+            opacity: 1;                
+        } 
+        30%{
+            transform: translateX(240px) translateY(50px);                
+        } 
+        35%{
+            transform: translateX(235px) translateY(70px);                
+        } 
+        40%{
+            transform: translateX(230px) translateY(90px);                
+        }       
+        45%{
+            transform: translateX(225px) translateY(110px);                
+        }      
+        50%{
+            transform: translateX(220px) translateY(130px);
+        }
+        55%{
+            transform: translateX(215px) translateY(150px);                         
+        } 
+        60%{
+            transform: translateX(210px) translateY(170px);                
+        } 
+        65%{
+            transform: translateX(205px) translateY(190px);                
+        }
+        70%{
+            transform: translateX(200px) translateY(210px);                
+        } 
+        75%{
+            transform: translateX(195px) translateY(230px);                
+        }
+        80%{
+            transform: translateX(193px) translateY(240px);                
+        }
+        85%{
+            transform: translateX(190px) translateY(250px);
+            
+        }
+        90%{
+            transform: translateX(187px) translateY(260px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(185px) translateY(270px); 
+            opacity: 0; 
+        }
+    }          
+    /*Escena 5*/   
+    .container__esc5 {
+        background-color: darkblue;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;            
+    }
+    .container__esc5--fondo, .container__esc5--fondo1 {
+        height: 350px;
+        width: 350px;
+    }
+    .container__esc5--personaje {/**/
+        height: auto;
+        width: 70px;
+    }
+    
+    .container__esc5--personaje {
+        animation-name: diecinueve;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 32s; 
+    }
+        @keyframes diecinueve {
+        0%{
+            transform: translateX(10px);
+            opacity: 0;                
+        }
+        9%{
+            transform: translateX(-240px) rotate(-3deg);                
+            opacity: 0;
+        }
+        10%{
+            transform: translateX(-245px) rotate(-3deg);                
+            opacity: 1;
+        }
+        15%{
+            transform: translateX(-250px) rotate(-5deg);                
+            opacity: 1;
+        }
+        20%{
+            transform: translateX(-250px) translateY(10px) rotate(-10deg);                
+            
+        }
+        25%{
+            transform: translateX(-255px) translateY(30px) rotate(-15deg);                
+        } 
+        30%{
+            transform: translateX(-260px) translateY(50px) rotate(-20deg);                
+        } 
+        35%{
+            transform: translateX(-265px) translateY(70px) rotate(-25deg);                
+        } 
+        40%{
+            transform: translateX(-270px) translateY(90px) rotate(-30deg);                
+        }       
+        45%{
+            transform: translateX(-275px) translateY(110px) rotate(-35deg);                
+        }      
+        50%{
+            transform: translateX(-280px) translateY(130px) rotate(-40deg);
+        }
+        55%{
+            transform: translateX(-285px) translateY(150px) rotate(-45deg);                         
+        } 
+        60%{
+            transform: translateX(-290px) translateY(170px) rotate(-50deg);                
+        } 
+        65%{
+            transform: translateX(-295px) translateY(190px) rotate(-55deg);                
+        }
+        70%{
+            transform: translateX(-300px) translateY(210px) rotate(-60deg);                
+        } 
+        75%{
+            transform: translateX(-305px) translateY(230px) rotate(-65deg);                
+        }
+        86%{
+            transform: translateX(-310px) translateY(250px) rotate(-70deg);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-315px) translateY(270px) rotate(-75deg); 
+            opacity: 0; 
+        }
+    }
+    .container__esc5--portal, .container__esc5--portal_medio {/**/
+        height: auto;
+        width: 120px;                            
+        animation-name: veinte;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        /*animation-fill-mode: forwards;*/
+        animation-delay: 32s;            
+        }
+        @keyframes veinte {
+        0%{
+            opacity: 0;
+        }
+        41%{
+            transform: translateX(200px);     
+            opacity: 0;  
+        }
+        42%{
+            transform: translateX(200px);                
+            opacity: 1;                      
+        }
+        44%{
+            transform: translateX(200px);                
+            opacity: 0;
+        }
+        46%{
+            transform: translateX(200px);                
+            opacity: 1;                      
+        }
+        48%{
+            transform: translateX(200px);                
+            opacity: 0;
+        }
+        50%{
+            transform: translateX(200px);                
+            opacity: 1;                      
+        }
+        86%{
+            transform: translateX(200px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(200px); 
+            opacity: 0; 
+        }
+    }         
+    /*Escena 6*/ 
+    .container__esc6 {
+        background-color: green;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;            
+    }
+    .container__esc6--fondo, .container__esc6--fondo1 {
+        height: 350px;
+        width: 350px;
+    }
+            
+    .container__esc6--personaje {/**/
+        height: auto;
+        width: 170px;
+    }
+    .container__esc6--portal, .container__esc6--portal_medio {/**/
+        height: auto;
+        width: 220px;                   
+        animation-name: veintiuno;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;            
+        animation-delay: 38s;            
+        }
+        @keyframes veintiuno {
+        0%{
+            opacity: 0;
+        }
+        13%{
+            transform: translateY(150px) rotate(180deg);     
+            opacity: 0;  
+        }
+        14%{
+            transform: translateY(150px) rotate(180deg);                
+            opacity: 1;                      
+        }
+        18%{
+            transform: translateY(150px) rotate(180deg);                
+            opacity: 0;
+        }
+        22%{
+            transform: translateY(150px) rotate(180deg);                
+            opacity: 1;                      
+        }
+        26%{
+            transform: translateY(150px) rotate(180deg);                
+            opacity: 0;
+        }
+        30%{
+            transform: translateY(150px) rotate(180deg);                
+            opacity: 1;                      
+        }
+        86%{
+            transform: translateY(150px) rotate(180deg);
+            opacity: 1;
+        }
+        99%{
+            transform: translateY(150px) rotate(180deg);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(150px) rotate(180deg); 
+            opacity: 0; 
+        }
+    }      
+    .container__esc6--personaje {
+        animation-name: veintidos;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 38s; 
+    }
+        @keyframes veintidos {
+        0%{
+            transform: translateX(10px) rotate(25deg);                
+        }            
+        29%{
+            transform: translateY(10px) rotate(-5deg);                
+            opacity: 1;
+        }
+        30%{
+            transform: translateY(10px) rotate(-10deg);                
+            opacity: 1;
+        }
+        35%{
+            transform: translateY(30px) rotate(-15deg);                
+        } 
+        40%{
+            transform: translateY(50px) rotate(-20deg);                
+        } 
+        45%{
+            transform: translateY(70px) rotate(-25deg);                
+        } 
+        50%{
+            transform: translateY(90px) rotate(-30deg);                
+        }       
+        55%{
+            transform: translateY(110px) rotate(-35deg);                
+        }      
+        60%{
+            transform: translateY(130px) rotate(-35deg);
+        }
+        65%{
+            transform: translateY(150px) rotate(-35deg);                         
+        } 
+        70%{
+            transform: translateY(170px) rotate(-35deg);                
+        } 
+        75%{
+            transform: translateY(190px) rotate(-35deg);                
+        }
+        80%{
+            transform: translateY(210px) rotate(-35deg);                
+        } 
+        85%{
+            transform: translateY(210px) rotate(-35deg);                
+        }
+        99%{
+            transform: translateY(210px) rotate(-35deg);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(210px) rotate(-35deg); 
+            opacity: 0; 
+        }
+    }
+    /*Escena 7*/
+    .container__esc7 {
+        background-color: darkblue;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;            
+    }
+    .container__esc7--fondo {
+        height: 360px;
+        width: 360px;
+    }
+            
+    .container__esc7--personaje {/**/
+        height: auto;
+        width: 380px;
+    }
+    
+    .container__esc7--personaje {
+        animation-name: veintitres;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 44s; 
+    }
+        @keyframes veintitres {
+        
+        10%{
+            transform: translateX(540px);                
+            opacity: 1;
+        }
+        99%{
+            transform: translateX(540px); 
+            opacity: 1;               
+        }
+        100%{
+            transform: translateX(540px); 
+            opacity: 0;               
+        }
+                    
+    }
+    .container__esc7--boca {
+        height: 50px;
+        width: 50px;
+        background: black;
+        border-radius: 50%;
+        animation-name: veinticuatro;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 44s; 
+    }
+    @keyframes veinticuatro {
+        0%{
+            transform: scaleY(.3) translateX(205px);
+            opacity: 0;
+        }
+        9%{
+            transform: scaleY(.3) translateX(205px);
+            opacity: 0;
+        }
+        10%{
+            transform: scaleY(.3) translateX(205px);
+            opacity: 1;
+        }
+        15%{
+            transform: scaleY(.1) translateX(205px);
+        }
+        30%{
+            transform: scaleY(.3) translateX(205px);
+        }
+        45%{
+            transform: scaleY(.1) translateX(205px);
+        }
+        60%{
+            transform: scaleY(.3) translateX(205px);
+        }
+        75%{
+            transform: scaleY(.1) translateX(205px);
+        }
+        90%{
+            transform: scaleY(.1) translateX(205px);
+        }
+        99%{
+            opacity: 1;
+        }
+        100%{
+            transform: scaleY(.1) translateX(205px);
+            opacity: 0;
+        }
+    }
+    .dialogo_7 img, .text_dialogo_7 {
+        height: 60px;
+        width: 90px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        animation-name: veinticinco;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 44s; 
+    }
+        @keyframes veinticinco {
+        0%{
+            opacity: 0;
+        }
+        19%{
+            transform: translateX(-120px);    
+            opacity: 0;
+        }
+        20%{
+            transform: translateX(-120px);    
+            opacity: 1;               
+        }
+        90%{
+            transform: translateX(-120px); 
+            opacity: 1;                
+        }
+        100%{
+            transform: translateX(-120px); 
+            opacity: 0;                
+        }                    
+    }
+    .container__esc7--interrogacion {
+        height: auto;
+        width: 50px;
+        color: black; 
+        animation-name: veintiseis;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 44s; 
+    }
+        @keyframes veintiseis {
+        0%{
+            transform: translateX(120px); 
+            opacity: 0;
+        }
+        69%{
+            opacity: 0;
+        }
+        70%{
+            transform: translateX(100px) scale(1.8);
+            opacity: 1;
+        }
+        75%{
+            transform: translateX(100px) scale(2);
+            opacity: 1;
+        }
+        80%{
+            transform: translateX(100px) scale(2.2);
+            opacity: 1;
+        }
+        85%{
+            transform: translateX(100px) scale(2.4);
+            opacity: 1;
+        }
+        90%{
+            transform: translateX(100px) scale(2.6);
+            opacity: 1;
+        }
+        99%{                
+            transform: translateX(100px) scale(2.8);            
+            opacity: 1;
+        }
+        100%{                                
+            transform: translateX(100px) scale(3);
+            opacity: 0;
+        }
+    }        
+    
+    /*Escena 8*/
+    .container__esc8 {
+        background-color: green;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;            
+    }
+    .container__esc8--fondo {
+        height: 350px;
+        width: 350px;
+    }
+            
+    .container__esc8--heroe {/**/
+        height: auto;
+        width: 140px;
+        animation-name: veintisiete;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 49s; 
+    }
+        @keyframes veintisiete {
+        0%{
+            transform: translateX(310px); 
+            opacity: 0;
+        }            
+        5%{
+            transform: translateX(310px);
+            opacity: 1;
+        }
+        42%{
+            transform: translateX(310px);
+            opacity: 1;
+        }
+        43%{                
+            opacity: 0;
+        }
+        47%{
+            transform: translateX(310px);
+            opacity: 1;
+        }
+        48%{
+            transform: translateX(310px);
+            opacity: 0;
+        }
+        51%{
+            transform: translateX(510px);
+            opacity: 0;
+        }
+        52%{
+            transform: translateX(510px);
+            opacity: 1;
+        }
+        56%{
+            transform: translateX(510px);
+            opacity: 0;
+        }
+        58%{
+            transform: translateX(510px);
+            opacity: 1;
+        }
+        99%{                
+            transform: translateX(510px);            
+            opacity: 1;
+        }
+        100%{                                
+            transform: translateX(100px);
+            opacity: 0;
+        }
+    }        
+    
+    .dialogo_8 img, .text_dialogo_8 {
+        height: 110px;
+        width: 195px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+        animation-name: veintiocho;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 49s; 
+    }
+    @keyframes veintiocho {
+        0%{
+            transform: translateX(350px); 
+            opacity: 0;
+        }            
+        5%{
+            transform: translateX(350px);
+            opacity: 1;
+        }
+        42%{
+            transform: translateX(350px);
+            opacity: 1;
+        }
+        43%{                
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    .dialogo_9 img, .text_dialogo_9 {
+        height: 100px;
+        width: 145px;     
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+        animation-name: veintinueve;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 49s; 
+    }
+    @keyframes veintinueve {
+        0%{
+            transform: translateX(200px); 
+            opacity: 0;
+        }                        
+        
+        51%{
+            transform: translateX(200px);
+            opacity: 0;
+        }
+        52%{
+            transform: translateX(200px);
+            opacity: 1;
+        }
+        56%{
+            transform: translateX(200px);
+            opacity: 0;
+        }
+        58%{
+            transform: translateX(200px);
+            opacity: 1;
+        }
+        99%{                
+            transform: translateX(200px);            
+            opacity: 1;
+        }
+        100%{                                
+            transform: translateX(200px);
+            opacity: 0;
+        }
+    }        
+
+    /*Escena 9*/
+    .container__esc9 {
+        background-color: darkblue;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;            
+    }
+    .container__esc9--fondo {
+        height: 350px;
+        width: 350px;
+    }
+            
+    .container__esc9--heroe {/**/
+        height: auto;
+        width: 150px;
+        animation-name: treinta;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 58s; 
+    }
+        @keyframes treinta {
+        0%{
+            transform: translateX(260px); 
+            opacity: 0;
+        }            
+        5%{
+            transform: translateX(260px);
+            opacity: 1;
+        }
+        42%{
+            transform: translateX(260px);
+            opacity: 1;
+        }
+        43%{                
+            opacity: 0;
+        }
+        47%{
+            transform: translateX(260px);
+            opacity: 1;
+        }
+        48%{
+            transform: translateX(260px);
+            opacity: 0;
+        }            
+        99%{                
+            transform: translateX(0px);            
+            opacity: 0;
+        }
+        100%{                                
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    }        
+    .container__esc9--heroe1 {/**/
+        height: auto;
+        width: 161px;
+        height: auto;
+        width: 150px;
+        animation-name: treinta_y_uno;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 58s; 
+    }
+        @keyframes treinta_y_uno {
+        0%{
+            transform: translateX(260px); 
+            opacity: 0;
+        }      
+        48%{
+            transform: translateX(260px);
+            opacity: 0;
+        }      
+        49%{
+            transform: translateX(260px);
+            opacity: 1;
+        }
+        
+        99%{                
+            transform: translateX(260px);            
+            opacity: 1;
+        }
+        100%{                                
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    }        
+    .dialogo_10 img, .text_dialogo_10 {
+        height: 90px;
+        width: 140px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+        animation-name: treinta_y_dos;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 58s; 
+    }
+        @keyframes treinta_y_dos {
+        0%{
+            transform: translateX(290px); 
+            opacity: 0;
+        }            
+        5%{
+            transform: translateX(290px);
+            opacity: 1;
+        }
+        42%{
+            transform: translateX(290px);
+            opacity: 1;
+        }            
+        47%{
+            transform: translateX(290px);
+            opacity: 1;
+        }
+        48%{
+            transform: translateX(290px);
+            opacity: 0;
+        }            
+        99%{                
+            transform: translateX(0px);            
+            opacity: 0;
+        }
+        100%{                                
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    }        
+
+    .container__esc9--capturados {
+        height: auto;
+        width: 150px;
+    }
+    
+    .dialogo_11 img, .text_dialogo_11, .container__esc9--capturados {
+        height: 100px;
+        width: 180px;        
+        color: black; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;                       
+        animation-name: treinta_y_tres;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 58s; 
+    }
+    @keyframes treinta_y_tres {
+        0%{
+            transform: translateX(330px); 
+            opacity: 0;
+        }      
+        48%{
+            transform: translateX(330px);
+            opacity: 0;
+        }      
+        49%{
+            transform: translateX(330px);
+            opacity: 1;
+        }
+        
+        99%{                
+            transform: translateX(330px);            
+            opacity: 1;
+        }
+        100%{                                
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    }  
+    .container__esc10 {
+        background-color: darkblue;
+        margin: 10px;
+        border-radius: 10%;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;   
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        flex-direction: column;
+
+    }      
