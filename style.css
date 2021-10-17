@@ -13,7 +13,7 @@ body {
     width: 100%hw;
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
 }
 .header__img {
     height: 90px;
@@ -22,32 +22,31 @@ body {
     margin-left: 10px;
     font-size: 1.5rem;
 }
-.header___main--button {
-    height: 100px;
-    border: 10px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.header___main--button {    
+    display: flex;     
+    flex-wrap:wrap;    
     
 }
 .header___main--button > a {
     background-color: #002b51;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.20rem;
-}
-
-/*.header___main--button1 {
-    background-color: #002b51;
-    border: 0.1rem;
-    border-radius: 15%;
-    color: seashell;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.20rem;
+    color: white;
     margin: 5px;
     padding: 5px;
+    border-radius: 15%;
+    cursor: pointer;
+    height: auto;
+    width: 90px;
+    text-align: center;
+    
+    
 }
-.header___main--button2 {
+
+.header___main--button1 {
+    
+}
+/*.header___main--button2 {
     background-color: #002b51;
     border: 0.1rem;
     border-radius: 25%;
