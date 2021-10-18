@@ -9,7 +9,7 @@ body {
     margin: 0px;
 }
 .header {
-    background-color: red;
+    background-color: #140f30;
     height: 120px;
     width: 100%hw;
     display: flex;
@@ -21,7 +21,7 @@ body {
     width: 110px;
     margin-top: 5px;
     margin-left: 10px;
-    font-size: 1.5rem;
+   
 }
 .header___main--button {    
     display: flex;     
@@ -31,44 +31,73 @@ body {
 .header___main--button > a {
     background-color: #002b51;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.20rem;
+    font-size: 1.1rem;
     color: white;
     margin: 5px;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 20px;
     cursor: pointer;
     height: auto;
-    width: 95px;
+    width: 88px;
     text-align: center;
     border: white 2px solid;   
 }
 .main {
     height: 800px;
     width: 100%hw;
-    background-image: linear-gradient(red, #002b51);
+    background-color: #140f30;
+    /*background-image: linear-gradient(red, rgb(252, 72, 1));*/
 }
-
+.About_Me {
+    display: flex;
+    border:yellow 2px solid;
+    flex-wrap:wrap;
+    
+}
+.presentation {
+    width: 400px;
+    height: 300px;
+    background-color: greenyellow;    
+    
+}
+.cyberguz {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    
+}
+.foto_cyberguz{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
 .footer {
-    background-color: #002b51;
-    height: 60px;
+    background-color: #140f30;
+    height: auto;
     width: 100%hw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
      
 }
-.contact {
+.contact >p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
-    border: white 2px solid;   
+
     margin-left: 10px;
-    align-items: center;
+    
 }
 .footer__img >img {
-    height: 90px;
-    width: 110px;
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 1.5rem;     
+    height: 40px;
+    width: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 5px;       
     flex-wrap:wrap; 
+     
 }
