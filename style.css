@@ -10,7 +10,7 @@ body {
 }
 .header {
     background-color: red;
-    height: 100px;
+    height: 120px;
     width: 100%hw;
     display: flex;
     justify-content: space-between;
@@ -40,45 +40,35 @@ body {
     height: auto;
     width: 95px;
     text-align: center;
-    border: white 2px solid;
-
-    
-    
+    border: white 2px solid;   
+}
+.main {
+    height: 800px;
+    width: 100%hw;
+    background-image: linear-gradient(red, #002b51);
 }
 
-.header___main--button1 {
-    
-}
-/*.header___main--button2 {
+.footer {
     background-color: #002b51;
-    border: 0.1rem;
-    border-radius: 25%;
-    color: seashell;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2rem;
-    margin: 5px;
-    padding: 5px;
+    height: 60px;
+    width: 100%hw;
+    display: flex;
+    justify-content: space-between;
+     
 }
-.header___main--button3 {
-    background-color: #002b51;
-    border: 0.1rem;
-    border-radius: 25%;
-    color: seashell;
-    cursor: pointer;
+.contact {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.20rem;
-    margin: 5px;
-    padding: 5px;
+    font-size: 1.5rem;
+    color: white;
+    border: white 2px solid;   
+    margin-left: 10px;
+    align-items: center;
 }
-.header___main--button4 {
-    background-color: #002b51;
-    border: 0.1rem;
-    border-radius: 25%;
-    color: seashell;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.20rem;
-    margin: 5px;
-    padding: 5px;
-}*/
+.footer__img >img {
+    height: 90px;
+    width: 110px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.5rem;     
+    flex-wrap:wrap; 
+}
