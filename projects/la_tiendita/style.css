@@ -1,137 +1,150 @@
 * {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    margin: 0;
+    padding: 0;
+    color: #003049;
 }
-/*main{
-    width:50vw;
-    height:50vh; 
- }*/
- header{
-    display: block;
-    height:12vh;
-    width:100vw;
-    background-color: rgb(187, 9, 9);
+html { 
+    font-size: 62.5%;
 }
-.logo{
-    display: inline-block;
-    width:10vw;
-    height: 12vh;
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /*siempre y cuando no cambie el valor 62.5% del html, de lo contrario pondria 10px, es espacio hasta el borde*/
+    border: 1px solid goldenrod;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /*margen inferior del contenido*/
 }
 .logo img {
-    display:inline-block;
-    width:10vw;
-    height:12vh; 
+    width: auto;
+    min-width: 50vw;
+    height: 25vh;   
+    min-height: 20vh;
 }
-.menu{
-    display: inline-block;
-    position: absolute;
-    width:90vw;
-    height: 12vh;
-    margin:0;
-    padding-left: 64vw;
-    padding-top: 4vh;
-    color: white;
+.menu {
+    display: flex;
+    list-style: none; /* elimina las vinetas*/
 }
-.lista{
-    display: inline-block;
-    padding: 5px;
-    font-size: 1.2rem;
+.menu li {
+    margin: 0 5px;
 }
-.medio{
-    display: block;
-    width:100vw;
-    height:74vh;
-    margin:0;
-    padding:0;
+.menu li a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
 }
-.izquierdo{
-    display: inline-block;
-    width:19vw;
-    height: 74vh;
-    background-color: rgb(224, 162, 28);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 1.2rem;
-    color:rgb(187, 9, 9);
+.content {
+    width: 100%;
+    padding: 20px 10px;
+    border: 1px solid greenyellow;
     text-align: center;
+   
 }
-.izquierdo img {
-    display:inline-block;
-    width:10vw;
-    height:12vh; 
+.content {
+    font-size: 2rem;
 }
-ul{
-    margin-top:1vh;
+.bodeguero {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 15px; /*arriba costado abajo*/
 }
-.cuadros{
-    display: inline-block;
-    list-style: none;
-    width:16vw;
-    height:16vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+.bodeguero img {
+    width: 100%;
     border-radius: 10px;
-    background-color: white;
 }
-.derecho{
-    display: inline-block;
-    width:81vw;
-    height: 74vh;    
-    position: absolute;
-    background-color:rgb(231, 198, 10);
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: goldenrod;
+
 }
-.ofertas{
-    display: inline-block;
-    list-style: none;
-    width:18vw;
-    height:60vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.box1 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 250px;
+    border: 2px solid greenyellow;
     border-radius: 10px;
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 1.2rem;
-    color:rgb(187, 9, 9);
-    text-align: center;
 }
-.ofertas img {
-    display:inline-block;
-    width:12vw;
-    height:50vh; 
-}
-section p {
-    font-size: 26px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    text-align: center;
-    color: white;
-}
-footer{
-    display: block;
-    width:100vw;
-    height:13vh;
-    padding-top: 1vh;
-    text-align: center;
-    background-color: rgb(187, 9, 9);
-    font-size: 18px;
-    color: white;
-}
-footer img {
-    display:inline-block;
-    width:14vw;
-    height:8vh; 
-}
-/*div #one {
-    font-size: 24px;
-    color: blue;
-}
-div #two {
-    font-size: 30px;
+.box p {
     color: red;
-}*/
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 9, 9);
+    padding: 1rem; /*siempre y cuando no cambie el valor 62.5% del html, de lo contrario pondria 10px, es espacio hasta el borde*/
+    border: 1px solid orangered;
+    list-style: none;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+}
+.redes img {
+    width: auto;
+    min-width: 50vw;
+    height: auto;
+    max-height: 14vh;   
+    min-height: 8vh;
+}
+@media (min-width: 600px) {
+.head {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    margin-bottom: 0;
+}
+.menu li a {
+    font-size: 1.6rem;
+    font-weight: 700;
+        
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 1024px) {
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;      
+}
+.menu li a {
+    font-size: 1.8rem;
+    font-weight: 700;
+        
+}
+.box p {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
