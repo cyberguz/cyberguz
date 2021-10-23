@@ -2,8 +2,7 @@
     box-sizing: border-box;
     font-size: 62.5%;
     margin: 0;
-    
-    /*padding: 0;*/
+   
 }
 body {
     margin: 0px;
@@ -11,10 +10,12 @@ body {
 .header {
     background-color: #140f30;
     height: 120px;
-    width: 100%hw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /*fija el header estatco*/
+    z-index: 100; /*pone al header por encima de los demas elementos*/
 }
 .header__img {
     height: 90px;
@@ -42,16 +43,18 @@ body {
     text-align: center;
     border: white 2px solid;   
     text-decoration: none;
+
 }
 .main {
     height: auto;
     width: 100%hw;
     background-color: #140f30;
     flex-wrap:wrap;
+    padding-top: 150px;
 }
 .Titulo {
     font-size: 7rem;
-    color: ivory;
+    color: rgb(6, 219, 226);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0px 0px 5px 20px; 
 }
@@ -60,6 +63,7 @@ body {
     align-items: center;
     /*border:yellow 2px solid;*/
     flex-wrap:wrap;   
+    padding-bottom: 80px;
 }
 .presentation {
     width: 550px;
