@@ -1,1 +1,137 @@
-style
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+/*main{
+    width:50vw;
+    height:50vh; 
+ }*/
+ header{
+    display: block;
+    height:12vh;
+    width:100vw;
+    background-color: rgb(187, 9, 9);
+}
+.logo{
+    display: inline-block;
+    width:10vw;
+    height: 12vh;
+}
+.logo img {
+    display:inline-block;
+    width:10vw;
+    height:12vh; 
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+    width:90vw;
+    height: 12vh;
+    margin:0;
+    padding-left: 64vw;
+    padding-top: 4vh;
+    color: white;
+}
+.lista{
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+.medio{
+    display: block;
+    width:100vw;
+    height:74vh;
+    margin:0;
+    padding:0;
+}
+.izquierdo{
+    display: inline-block;
+    width:19vw;
+    height: 74vh;
+    background-color: rgb(224, 162, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color:rgb(187, 9, 9);
+    text-align: center;
+}
+.izquierdo img {
+    display:inline-block;
+    width:10vw;
+    height:12vh; 
+}
+ul{
+    margin-top:1vh;
+}
+.cuadros{
+    display: inline-block;
+    list-style: none;
+    width:16vw;
+    height:16vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 10px;
+    background-color: white;
+}
+.derecho{
+    display: inline-block;
+    width:81vw;
+    height: 74vh;    
+    position: absolute;
+    background-color:rgb(231, 198, 10);
+}
+.ofertas{
+    display: inline-block;
+    list-style: none;
+    width:18vw;
+    height:60vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color:rgb(187, 9, 9);
+    text-align: center;
+}
+.ofertas img {
+    display:inline-block;
+    width:12vw;
+    height:50vh; 
+}
+section p {
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+footer{
+    display: block;
+    width:100vw;
+    height:13vh;
+    padding-top: 1vh;
+    text-align: center;
+    background-color: rgb(187, 9, 9);
+    font-size: 18px;
+    color: white;
+}
+footer img {
+    display:inline-block;
+    width:14vw;
+    height:8vh; 
+}
+/*div #one {
+    font-size: 24px;
+    color: blue;
+}
+div #two {
+    font-size: 30px;
+    color: red;
+}*/
