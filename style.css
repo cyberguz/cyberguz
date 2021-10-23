@@ -58,7 +58,7 @@ body {
 .About_Me {
     display: flex;
     align-items: center;
-    border:yellow 2px solid;
+    /*border:yellow 2px solid;*/
     flex-wrap:wrap;   
 }
 .presentation {
@@ -181,16 +181,14 @@ h1 strong {
   .Portfolio-item__details--title {
     text-align: center;
     color: white;
-    font-size: 1.6rem;
-    
+    font-size: 1.6rem;    
     /*margin: 5px 0px 0px 0px;*/
    
   }
   .Portfolio-item__details--subtitle {
     color: white;
     font-size: 1rem;
-    margin: 3px 0px;
-    
+    margin: 3px 0px;    
   }
   
 
