@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box;
     font-size: 62.5%;
-    margin: 0;
-   
+    margin: 0;   
+}
+:lang(es) {
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-size: 80%;
+    
 }
 body {
     margin: 0px;
@@ -43,7 +47,18 @@ body {
     text-align: center;
     border: white 2px solid;   
     text-decoration: none;
-
+}
+.header___main--button > a:lang(es) {
+    font-size: 1.3rem; 
+    height: 28px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header___main--button > a:hover {
+    background-color: #002b51;
+    transform: scale(1.15);
+    border: rgb(255, 0, 0) solid;
 }
 .main {
     height: auto;
@@ -53,10 +68,13 @@ body {
     padding-top: 150px;
 }
 .Titulo {
-    font-size: 7rem;
+    font-size: 8rem;
     color: rgb(6, 219, 226);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0px 0px 5px 20px; 
+}
+.Titulo :lang(es) {
+    font-size: 3rem;
 }
 .About_Me {
     display: flex;
@@ -76,10 +94,15 @@ body {
     text-transform: none;
     margin: 0px 20px 0px 20px;      
 }
+.presentation :lang(es) {
+    line-height: 230%;
+    font-size: 1.7rem;
+}
 h1 strong {
     color: red;
-    font-size: 3rem;
+    font-size: 3rem;    
 }
+
 .cyberguz {
     width: 400px;
     height: 300px;
@@ -87,7 +110,8 @@ h1 strong {
     background-color: white;
     overflow: hidden;
     position: relative;
-    display: inline-block;    
+    display: inline-block;
+    
 }
 .foto_cyberguz{
     width: 450px;
@@ -161,13 +185,13 @@ h1 strong {
     background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
     bottom: 0;
     display: flex;
-    font-size: 10px;
+    /*font-size: 10px;*/
     flex-direction: column;
     justify-content: flex-end;
     left: 0;
     opacity: 0;
     transition: 450ms opacity;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     right: 0;
     top: 0;
@@ -191,10 +215,13 @@ h1 strong {
   }
   .Portfolio-item__details--subtitle {
     color: white;
-    font-size: 1rem;
+    font-size: .9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 3px 0px;    
   }
-  
+  .Portfolio-item__details--subtitle:lang(es) {
+    font-size: 1.1rem;
+  }
 
 .footer {
     background-color: #140f30;
@@ -219,7 +246,8 @@ h1 strong {
     margin-bottom: 2px;
     margin-right: 5px;       
     flex-wrap:wrap; 
-    cursor: pointer;
-    
-     
+    cursor: pointer;     
+}
+.footer__img img:hover {
+    transform: scale(1.2);
 }
