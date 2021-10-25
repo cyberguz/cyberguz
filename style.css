@@ -4,8 +4,9 @@
     margin: 0;   
 }
 :lang(es) {
-    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-    font-size: 80%;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/    
+    font-size: 62.5%;
+    margin: 0;
     
 }
 body {
@@ -17,9 +18,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: fixed; /*fija el header estatco*/
+    align-items: center; /*alinea en forma vertical*/
+    position: fixed; /*fija el header estatico*/
     z-index: 100; /*pone al header por encima de los demas elementos*/
+    
 }
 .header__img {
     height: 90px;
@@ -28,10 +30,10 @@ body {
     margin-left: 10px;
    
 }
-.header___main--button {    
+.header___main--button   {    
     display: flex;     
-    flex-wrap:wrap;    
-    
+    flex-wrap:wrap;  
+    text-align: center;
 }
 .header___main--button > a {
     background-color: #002b51;
@@ -43,17 +45,19 @@ body {
     border-radius: 20px;
     cursor: pointer;
     height: auto;
-    width: 88px;
-    text-align: center;
+    width: 88px;    
     border: white 2px solid;   
     text-decoration: none;
 }
 .header___main--button > a:lang(es) {
-    font-size: 1.3rem; 
+    
+    font-size: 2.9rem; 
     height: 28px;
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    line-height: 0%;
+    align-items: center ;
+
+    
 }
 .header___main--button > a:hover {
     background-color: #002b51;
@@ -65,16 +69,17 @@ body {
     width: 100%hw;
     background-color: #140f30;
     flex-wrap:wrap;
-    padding-top: 150px;
+    
 }
 .Titulo {
     font-size: 8rem;
     color: rgb(6, 219, 226);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0px 0px 5px 20px; 
+    padding-top: 150px; /*le puse padding para bajar el main por debajo del header estatico, tambien para cuadrar en primer plano las secciones del menu (acceso directo)*/
 }
 .Titulo :lang(es) {
-    font-size: 3rem;
+    font-size: 3.5rem;    
 }
 .About_Me {
     display: flex;
@@ -96,7 +101,7 @@ body {
 }
 .presentation :lang(es) {
     line-height: 230%;
-    font-size: 1.7rem;
+    font-size: 2.3rem;
 }
 h1 strong {
     color: red;
@@ -210,19 +215,81 @@ h1 strong {
     text-align: center;
     color: white;
     font-size: 1.6rem;    
-    /*margin: 5px 0px 0px 0px;*/
-   
+    /*margin: 5px 0px 0px 0px;*/   
+  }
+  .Portfolio-item__details--title:lang(es) {
+    font-size: 4.5rem;
   }
   .Portfolio-item__details--subtitle {
     color: white;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 3px 0px;    
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 150px;
+    
+    
   }
   .Portfolio-item__details--subtitle:lang(es) {
-    font-size: 1.1rem;
+    font-size: 2.3rem;
+    line-height: 20%;
   }
-
+  .Blog {
+    /*background-color: tomato;*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .scrabble {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    /*background-color: greenyellow;*/
+    width: 100%;
+    height: 100px;
+  }
+  .scrab1, .scrab2, .scrab3, .scrab4 {
+    width: 100px;
+    height: auto;  
+  
+    animation-name: uno;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease; 
+        animation-delay: 0s;           
+        }
+        @keyframes uno {
+        0%{
+            transform: translatex(5px);                
+        }
+     
+        50% {
+          transform: translatex(50px);
+        }
+        
+        100% {
+          transform: translatex(5px);
+          
+      }
+  }
+  .articulo {
+      background-color: white;
+      border: yellow 1px solid;
+      border-radius: 10px;
+      width: 350px;
+      height: 700px;
+      margin: 25px;      
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 6rem;
+      text-align: center;
+  }
+.articulo:lang(es) {
+      font-size: 14rem;
+}
 .footer {
     background-color: #140f30;
     height: auto;
