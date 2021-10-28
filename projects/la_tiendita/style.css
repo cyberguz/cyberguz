@@ -46,10 +46,8 @@ html {
     padding: 20px 10px;
     border: 1px solid greenyellow;
     text-align: center;
-   
-}
-.content {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    align-items: center;
 }
 .bodeguero {
     width: 100%;

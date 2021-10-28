@@ -245,50 +245,80 @@ h1 strong {
   }
   .scrabble {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-content: center;
     flex-wrap: wrap;
     /*background-color: greenyellow;*/
-    width: 100%;
+    width: auto;
     height: 100px;
+    
   }
   .scrab1, .scrab2, .scrab3, .scrab4 {
-    width: 100px;
-    height: auto;  
-  
+    width: 50px;
+    height: auto;    
+    margin-right: 30px;
     animation-name: uno;
-        animation-duration: 2s;
-        animation-iteration-count:infinite;
-        animation-timing-function: ease; 
-        animation-delay: 0s;           
-        }
-        @keyframes uno {
-        0%{
-            transform: translatex(5px);                
-        }
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease; 
+    animation-delay: 0s;           
+    }
+    @keyframes uno {
+    0%{
+        transform: translatex(5px);                
+      }
      
-        50% {
-          transform: translatex(50px);
-        }
+    50% {
+        transform: translatex(50px);
+      }
         
-        100% {
-          transform: translatex(5px);
-          
+    100% {
+        transform: translatex(5px);          
       }
   }
+  .intro_blog p {
+    
+    width: 100%;
+    height: auto;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: khaki;
+  }
+  .intro_blog p:lang(es) {
+    font-size: 6rem;
+    line-height: 30%;
+    
+  }
   .articulo {
-      background-color: white;
-      border: yellow 1px solid;
+      background-color: rgb(18, 3, 54);
+      border: red 1px solid;
       border-radius: 10px;
       width: 350px;
-      height: 700px;
-      margin: 25px;      
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 6rem;
+      height: 200px;
+      margin: 25px;
       text-align: center;
+      
+      
+      }
+  .articulo a {
+    color: white;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
   }
-.articulo:lang(es) {
-      font-size: 14rem;
+  .articulo a h1 {
+    padding-top: 15px;
+    
+    
+  }
+.articulo a:lang(es) {
+      font-size: 8rem;      
+}
+#description p{
+  padding-top: 20px;
+  color: white;
+ 
 }
 .footer {
     background-color: #140f30;
@@ -296,15 +326,19 @@ h1 strong {
     width: 100%hw;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    
      
 }
 .contact >p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: white;
     margin-left: 10px;
     margin: 0px 0px 10px 0px;    
+}
+.contact >p:lang(es) {
+  font-size: 3.5rem;
+  line-height: 10%;
 }
 .footer__img img {
     height: 40px;
@@ -316,5 +350,8 @@ h1 strong {
     cursor: pointer;     
 }
 .footer__img img:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
+
+
+
