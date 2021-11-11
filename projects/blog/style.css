@@ -102,28 +102,44 @@ flex-wrap: wrap;
 @media (min-width: 320px) {
     .parrilla {
         width: 300px;
-        height: auto;
-        padding: 10px;
+        height: auto;       
     }
-    .parrafo{
-        text-align: justify;    
-        padding: 10px;   
+    .parrafo{        
         width: 300px;
-        height: auto;    
-        margin: 20px;
+        height: auto;            
         }
+    .parrafo h1, p, .content p, .content p b{
+            font-size: 1.6rem;
+    }
+    .above p{
+        height: 200px;
+    }
 }
-@media (min-width: 425px) {
+@media (min-width: 420px) {
     .parrilla {
         width: 380px;
         height: auto;
-        padding: 10px;
+       
     }
-    .parrafo{
-        text-align: justify;    
-        padding: 10px;   
+    .parrafo{          
         width: 400px;
-        height: auto;    
-        margin: 20px;
+        height: auto;            
+        }
+    .parrafo h1, p, .content p, .content p b{
+        font-size: 1.6rem;
+        }
+}
+@media (min-width: 760px) {
+    .parrilla {
+        width: 680px;
+        height: auto;
+       
+    }
+    .parrafo{          
+        width: 700px;
+        height: auto;            
+        }
+    .parrafo h1, p, .content p, .content p b{
+        font-size: 1.6rem;
         }
 }
