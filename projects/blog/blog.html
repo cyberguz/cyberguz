@@ -4,69 +4,85 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style>
-      body{
-    background-color: aliceblue;
-       }
-       .content{
-    width: 940px;
-    padding: 10px;
-    margin: auto;
-       }
-     
-       .parrafo{
-    text-align: justify;
-    border: solid 1px;
-    border-color: deepskyblue;
-    background-color: white;
-    padding: 10px;   
-       }
-     
-       body div p a{
-    text-decoration: none;
-    color: blueviolet;
-       }
-   </style>
+   <title>Blog</title>
+   <link rel="stylesheet" href="./style.css">   
    
-   <script> 
-   function vermas(id){
-   if(id=="mas"){
-   document.getElementById("desplegar").style.display="block";   
-   document.getElementById("mas").style.display="none"; 
-   }
-   else{
-   document.getElementById("desplegar").style.display="none";
-   document.getElementById("mas").style.display="inline";
-   }
-   }
-   </script>
-   </head>
-   
+   </head>   
    <body>
-     <div>
-       <div class="parrafo">
-    <h2>Inesperado encuentro</h2>
-    <p>
-        Mientras preparaba todo para regresar a Lima, finalizando mi última visita a Virú, tomé unos segundos para revisar el Facebook, la campanita intrigadora indicaba una notificación sin leer. 
-    <a href="#" onclick="vermas('mas');" id="mas">... [leer más]</a>
-    </p>
-    <p id="desplegar" style="display:none;">
-        Se trataba de una publicación de José Carlos, mi primo, promocionando su sabroso chancho al palo. Las fotos de la publicación, la sazón del parrillero y por supuesto, el recuerdo de ese sabroso chimichurri casero, motivaron en mí un acto reflejo que me ubicó tras el volante, camino a su encuentro.
-     <br />
-     Ya en el lugar, encontré a Davicho y su hermano, quienes llegaron previamente, atraídos también por la publicación. Me acerque a conversar con ellos, aprovechando que el chancho aún seguía sobre el ardiente carbón. <br />
-     Entre anécdotas y recuerdos pasaron unos minutos hasta que José Carlos nos hizo unas señas para avisarnos que ya estaba todo listo. <br />
-     Fue en ese momento que reparamos en las personas que estaban esperando y que presurosamente formaron una larga cola. Estuvimos tan entretenidos, que no nos percatamos de las personas que llegaron posteriormente. Así que seguimos conversando, pero esta vez formados en la cola, obviamente. <br />
-     El parrillero tiene arte para cortar y servir el chancho, lo observaba a lo lejos mientras iba entregando uno a uno los platos, con ese inmenso carisma, jugando bromas o compartiendo con ellos sus secretos de cocción. <br />
-     Davicho hizo su pedido para llevar, el cual entregaron al instante, sin embargo, se sentó a la mesa para hacerme compañía, valore mucho ese gesto y apresure el ritmo para no retrasarlo, que les puedo decir, el chancho al palo estuvo delicioso. <br />
-     Finalmente, Davicho y su hermano se retiraron; tardé unos minutos en despedirme de mi primo. <br />
-     Cuando me disponía a partir, un extraño se paró frente a mí y con cierta familiaridad me dijo: tú eres Carlos, ¿verdad?; lo quedé mirando con intriga, mientras revisaba rápidamente los archivos de mis recuerdos, tratando de reconocer su rostro. Ante mi evidente desconcierto, me dice: Soy Lener Castro.<br />
-     Mi mente hizo un viaje veloz a mis recuerdos de infancia, cuando visitaba a mi abuela en San Nicolás durante las vacaciones de colegio, Lener vivía en la chacra colindante, solíamos jugar juntos cuando niños. <br />
-     Me agradó reencontrarme con este amigo de infancia y en unos cortos minutos intercambiar información acerca de nuestras familias, lugar de residencia actual y la promesa de planear un encuentro futuro. <br />
-     Lo que no me gustó fue, que no pude reconocerlo. Me pregunto, ¿Cómo hizo para reconocerme? Nuestros recuerdos mutuos se congelaron a la edad de 10 años, ahora tengo panza, menos pelo y muchas canas, <b>¿Será por eso que me abordo en forma de pregunta?</b>
-     <a href="#" onclick="vermas('menos');" id="menos">... [leer menos]</a>
-     </p>
-   </div>
-   </div>
+    <header class="header">
+        <img class="header__img"src="https://i.imgur.com/DUce8Xa.png" alt="logo_cyberguz">        
+        <div class="header__main">
+            <div class="header___main--button">
+                <a href="#about_me" >About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog" >Blog</a>
+                <a href="https://platzi.com/p/cyberguz/">Certificates</a>                
+                <a href="#contacto" >Contact me!</a>                                              
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="above"><p>San Nicolas y la Abuela Rosita</p></div>
+        <div class="container">
+            <div class="parrafo">
+                <h1>1. INESPERADO ENCUENTRO</h1>
+                 
+                <p><br> Mientras preparaba todo para regresar a Lima, finalizando mi última visita a Virú, tomé unos segundos para revisar el Facebook, la campanita intrigadora indicaba una notificación sin leer. 
+                <details class="content">
+                    <summary class="summary">Seguir leyendo...</summary>
+                    <img class="parrilla" src="https://i.imgur.com/ySBtMFA.png" alt="parrillero">
+                    <p>Se trataba de una publicación de José Carlos, mi primo, promocionando su sabroso chancho al palo. Las fotos de la publicación, la sazón del parrillero y por supuesto, el recuerdo de ese sabroso chimichurri casero, motivaron en mí un acto reflejo que me ubicó tras el volante, camino a su encuentro.<br />
+                    Ya en el lugar, encontré a Davicho y su hermano, quienes llegaron previamente, atraídos también por la publicación. Me acerque a conversar con ellos, aprovechando que el chancho aún seguía sobre el ardiente carbón. <br />
+                    Entre anécdotas y recuerdos pasaron unos minutos hasta que José Carlos nos hizo unas señas para avisarnos que ya estaba todo listo. <br />                        
+                    Fue en ese momento que reparamos en las personas que estaban esperando y que presurosamente formaron una larga cola. Estuvimos tan entretenidos, que no nos percatamos de las personas que llegaron posteriormente. Así que seguimos conversando, pero esta vez formados en la cola, obviamente. <br />
+                    El parrillero tiene arte para cortar y servir el chancho, lo observaba a lo lejos mientras iba entregando uno a uno los platos, con ese inmenso carisma, jugando bromas o compartiendo con ellos sus secretos de cocción. <br />
+                    Davicho hizo su pedido para llevar, el cual entregaron al instante, sin embargo, se sentó a la mesa para hacerme compañía, valore mucho ese gesto y apresure el ritmo para no retrasarlo, que les puedo decir, el chancho al palo estuvo delicioso. <br />
+                    Finalmente, Davicho y su hermano se retiraron; tardé unos minutos en despedirme de mi primo. <br />
+                    Cuando me disponía a partir, un extraño se paró frente a mí y con cierta familiaridad me dijo: tú eres Carlos, ¿verdad?; lo quedé mirando con intriga, mientras revisaba rápidamente los archivos de mis recuerdos, tratando de reconocer su rostro. Ante mi evidente desconcierto, me dice: Soy Lener Castro.<br />
+                    Mi mente hizo un viaje veloz a mis recuerdos de infancia, cuando visitaba a mi abuela en San Nicolás durante las vacaciones de colegio, Lener vivía en la chacra colindante, solíamos jugar juntos cuando niños. <br />
+                    Me agradó reencontrarme con este amigo de infancia y en unos cortos minutos intercambiar información acerca de nuestras familias, lugar de residencia actual y la promesa de planear un encuentro futuro. <br />
+                    Lo que no me gustó, fue que no pude reconocerlo. Me pregunto, <b></b>¿Cómo hizo para reconocerme? </b>Nuestros recuerdos mutuos se congelaron a la edad de 10 años, ahora tengo panza, menos pelo y muchas canas, <b>¿Será por eso que me abordó en forma de pregunta?</b>
+                    </p>
+                </details>                 
+             </div>
+             <div class="parrafo">
+                <h1>2. SAN NICOLAS</h1>
+                
+                <p><br> Los mejores recuerdos de mi infancia, son los días vividos en San Nicolás, un fértil valle ubicado entre una cadena de cerros y el rio Virú, esta historia data de algún tiempo atrás, cuando los caminos eran trocha, los vehículos escasos y aprovechaba las vacaciones de la primaria para ir a la chacra con mi abuelita Rosa y mi abuela María. 
+               <details class="content">
+                   <summary class="summary">Seguir leyendo...</summary>
+                   <img class="parrilla" src="https://i.imgur.com/HVR3whg.jpg" alt="San Nicolas">
+                   <p>Había dos formas de llegar a San Nicolás: en la "burra" o caminando.
+                   </p>
+               </details>                
+            </div>
+            <div class="parrafo">
+                <h1>3. UN VIAJE EN LA BURRA</h1>
+                
+                <p><br> "La burra" no era un animal, sino un ruidoso, viejísimo y oxidado microbús trompudo, de color blanco y verde oscuro, que cubría la ruta Virú - Huaca pongo. 
+               <details class="content">
+                   <summary class="summary">Seguir leyendo...</summary>
+                   <img class="parrilla" src="https://i.imgur.com/P6qfsRo.png" alt="parrillero">
+                   <p>La burra salía de Virú a la 1 pm y retornaba al día siguiente; con la carretera rural y las paradas frecuentes a lo largo del camino, el viaje se tornaba lento. Ir al cruce de San Nicolás por esta vía tomaba en poco más de hora y media.<br/>                        
+                   Cuando tenía todo listo, abuela María, pasaba por la casa de mis padres para avisar que los días próximos estaría en San Nicolás, no había teléfonos, así que ésta era la única forma de avisar.  En ese momento me antojaba ir con ella, no había que convencerla mucho, siempre estaba dispuesta a llevarme, a quien había que convencer era a mi madre, pero una vez que tenía su permiso, tomaba rápidamente una mochila, metía unas cuantas mudas de ropa y me pegaba a la abuela.<br/>
+                   Luego de ir por las cosas de la abuela, nos dirigimos al paradero cerca al mercado, allí estaba "la burra". <br/>
+                   Al subir me percate del fuerte olor a kerosene que había en el ambiente. <br/>¡Ten cuidado, el piso resbala!, advirtio la abuela; al tiempo que luchaba por sujetarme de los asientos para evitar la caída. El piso era de metal liso y le rociaban kerosene para cambiar el color oxidado del metal por un color oscuro; sin embargo, el piso recién regado se tornaba resbaladizo en tanto secaba. Cosas que sólo ocurrían en esos tiempos pues ahora no veo la conveniencia de rociar el piso del bus con combustible, solo por temas estéticos.<br/>
+                   Elegimos lugar para sentarnos, los asientos eran rígidos como una banca de parque, elegí la ventana. Mientras esperábamos que se llene el bus, podía observar cómo iban cargando a "la burra". Los estibadores desfilaban con productos comestibles: arroz, azúcar, aceite, papas; eran subidos a la parrilla, también algunos electrodomésticos, nuevos y usados, los infaltables eran los animalitos: pollos, patos, carneros; que los vecinos llevaban para hacer la cría o para darle sangre nueva al corral. <br/>
+                   <b>Llegó la hora de partir</b>, el temblor inicial y el rugido del motor le dieron vida a este cúmulo de fierros y empezó andar.<br/>
+                   "La burra" aquel bus viejo que ya se jugaba los descuentos, no tenía una buena amortiguación, así que los baches nos hacían saltar del asiento de vez en cuando, aunque todos ya estaban acostumbrados. Los adultos conversaban acerca de sus experiencias agrícolas: de sus cosechas, plagas, remedios; de cómo estaban aumentando los animales; del nombre que le tocaba a su hijo de acuerdo al almanaque Bristol; con el ruido del motor todos debían gritar para hacerse escuchar, por lo que las conversaciones se fundían entre ellos.<br/>
+                   Luego de pagar el pasaje y unas cuantas paradas, llegamos al cruce San Nicolás o como conocía a ese punto: <b>“Doña Cleme”</b>, por el nombre de la amiga de mi abuela que tenía su casa allí.<br/>
+                   Al bajar, mi abuela tomaba un par de minutos para saludar a su amiga, pero nunca se detenía, simplemente gritaba fuerte su nombre y la Sra. Cleme respondía con un fuerte "buenas tardes mariquita", intercambiaban dos o tres oraciones mientras seguíamos caminando, nunca las vi detenerse a conversar sin embargo en ese corto tiempo, hasta saludos se encargaban o aprovechaban para dejar un mensaje para otra persona que posiblemente veríamos.<br/>
+                   Continuamos nuestro camino a pie, la parte emocionante no era viajar en la burra, sino, cruzar el río, de acuerdo a la época podría estar seco, con poca agua o con carga media, porque cuando estaba cargado, nadie se atrevía a cruzar.<br/>
+                   Cuando el río estaba seco cruzábamos sin preocupación, corriendo y deteniéndome a jugar con la arena empataba el paso cansado de la abuela.<br/>
+                   Cuando el río estaba con poca agua, buscábamos una rama delgada que nos sirva de bastón y antes de cruzar, nos remangábamos los pantalones lo más que podíamos, aunque siempre terminaba mojado.<br/>
+                   Cuando el río estaba medio cargado las cosas eran diferentes, la abuela me tomaba de la mano y se ponía del lado de la corriente de agua, yo cruzaba sujetando su mano y cubriéndome de la fuerza del agua con su cuerpo, esto era adrenalina pura, me quedaba en la orilla mientras veía a mi abuela volver a cruzar para pasar el costal con las cosas que traía. <br/>
+                   Vaya trabajo que le daba a mi abuela, pero en ese momento no me percataba de ello. <br> Superado el río seguíamos caminando, hacia la casa de la abuelita Rosa, la mamá de mi abuela.
+                   </p>
+               </details>                
+            </div>
+
+         </div>
+    </section>
+    
    </body>
    </html>

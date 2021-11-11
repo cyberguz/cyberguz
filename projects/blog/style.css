@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;   
+}
+body{
+    background-color: #140f30;
+       }
+.header {
+    background-color: #140f30;
+    height: 120px;
+    width: 100%;     
+    display: flex;     
+    justify-content: space-between;     
+    align-items: center; /*alinea en forma vertical*/    
+    position: fixed; /*fija el header estatico*/   
+    z-index: 100; /*pone al header por encima de los demas elementos*/        
+    }
+.header__img {
+    height: 90px;
+    width: 110px;
+    margin-top: 5px;
+    margin-left: 10px;       
+    }
+.header___main--button   {    
+    display: flex;     
+    flex-wrap:wrap;  
+    text-align: center;
+    }
+.header___main--button > a {
+    background-color: #002b51;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    height: auto;
+    width: 88px;    
+    border: white 2px solid;   
+    text-decoration: none;
+    }
+.header___main--button > a:lang(es) {
+        
+    font-size: 12.9rem; 
+    height: 28px;
+    margin: 5px;
+    line-height: 0%;
+    align-items: center ;
+            
+    }
+.header___main--button > a:hover {
+    background-color: #002b51;
+    transform: scale(1.15);
+    border: rgb(255, 0, 0) solid;
+    }
+/*.content{
+    width: 940px;
+    padding: 10px;
+    margin: auto;    
+    }*/
+.section{
+display: flex;
+flex-wrap: wrap;
+}
+.above p{
+    height: 160px;
+    width: 100%;    
+    font-size: 2.6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: cornsilk;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 10px 1px 30px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgb(197, 235, 248);*/
+}
+.parrafo{
+    text-align: justify;
+    /*border: solid 1px;
+    border-color: white;*/    
+    padding: 10px;   
+    width: 400px;
+    height: auto;
+    /*border-radius: 20px;*/
+    margin: 20px;
+    }
+.parrafo h1, p, .content p, .content p b{
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    color: wheat;
+}
+.summary{
+    color: #e75512;
+    font-size: 1.8rem;
+}
+
+.parrilla {
+    width: 380px;
+    height: auto;
+    padding: 10px;
+}
