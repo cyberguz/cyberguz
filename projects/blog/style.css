@@ -79,12 +79,12 @@ flex-wrap: wrap;
 .parrafo{
     text-align: justify;    
     padding: 10px;   
-    width: 350px;
+    width: 400px;
     height: auto;    
     margin: 20px;
     }
 .parrafo h1, p, .content p, .content p b{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
     color: wheat;
@@ -95,7 +95,35 @@ flex-wrap: wrap;
 }
 
 .parrilla {
-    width: 340px;
+    width: 380px;
     height: auto;
     padding: 10px;
+}
+@media (min-width: 320px) {
+    .parrilla {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+    }
+    .parrafo{
+        text-align: justify;    
+        padding: 10px;   
+        width: 300px;
+        height: auto;    
+        margin: 20px;
+        }
+}
+@media (min-width: 425px) {
+    .parrilla {
+        width: 380px;
+        height: auto;
+        padding: 10px;
+    }
+    .parrafo{
+        text-align: justify;    
+        padding: 10px;   
+        width: 400px;
+        height: auto;    
+        margin: 20px;
+        }
 }
