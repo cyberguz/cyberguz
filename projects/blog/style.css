@@ -55,11 +55,7 @@ body{
     transform: scale(1.15);
     border: rgb(255, 0, 0) solid;
     }
-/*.content{
-    width: 940px;
-    padding: 10px;
-    margin: auto;    
-    }*/
+
 .section{
 display: flex;
 flex-wrap: wrap;
@@ -78,16 +74,13 @@ flex-wrap: wrap;
 .container{
     display: flex;
     flex-wrap: wrap;
-    /*background-color: rgb(197, 235, 248);*/
+    
 }
 .parrafo{
-    text-align: justify;
-    /*border: solid 1px;
-    border-color: white;*/    
+    text-align: justify;    
     padding: 10px;   
-    width: 400px;
-    height: auto;
-    /*border-radius: 20px;*/
+    width: 350px;
+    height: auto;    
     margin: 20px;
     }
 .parrafo h1, p, .content p, .content p b{
@@ -102,7 +95,7 @@ flex-wrap: wrap;
 }
 
 .parrilla {
-    width: 380px;
+    width: 340px;
     height: auto;
     padding: 10px;
 }
