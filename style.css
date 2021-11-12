@@ -298,6 +298,7 @@ h1 strong {
       height: 200px;
       margin: 25px;
       text-align: center;
+      padding: 15px;
       
       
       }
@@ -310,6 +311,7 @@ h1 strong {
   }
   .articulo a h1 {
     padding-top: 15px;
+    padding-bottom: 15px;
     
     
   }
@@ -317,13 +319,13 @@ h1 strong {
       font-size: 10rem;
       line-height: 0.5;
 }
-#description p{
+/*#description p{
   padding-top: 20px;
   color: white;
  
-}
+}*/
 .footer {
-    background-color: #140f30;
+    background-color: rgb(18, 3, 54);
     height: auto;
     width: 100%hw;
     display: flex;
@@ -336,7 +338,7 @@ h1 strong {
     font-size: 1.5rem;
     color: white;
     margin-left: 10px;
-    margin: 0px 0px 10px 0px;    
+    margin: 10px 0px 0px 20px; /*arriba - derecha - abajo - izquierda */    
     padding-left: 20px;
 }
 .contact >p:lang(es) {
@@ -344,11 +346,11 @@ h1 strong {
   line-height: 10%;
 }
 .footer__img img {
-    height: 40px;
-    width: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 5px;       
+    height: 50px;
+    width: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;       
     flex-wrap:wrap; 
     cursor: pointer;     
 }
