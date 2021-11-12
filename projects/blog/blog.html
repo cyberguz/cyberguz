@@ -7,6 +7,38 @@
    <title>Blog</title>
    <link rel="stylesheet" href="./style.css">   
    
+<script type="text/javascript">
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  var __semio__params = {
+    graphcommentId: "cyberguz", // make sure the id is yours
+
+    behaviour: {
+      // HIGHLY RECOMMENDED
+      //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
+    },
+
+    // configure your variables here
+
+  }
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+
    </head>   
    <body>
     <header class="header">
@@ -111,7 +143,7 @@
                 <p><br>La abuelita Rosa, es en realidad mi bisabuela, mamá de abuela María, pero desde siempre le decíamos abuelita.<br/> 
                <details class="content">
                    <summary class="summary">Seguir leyendo...</summary>
-                   <img class="parrilla" src="https://i.imgur.com/uKMvH1R.jpg" alt="parrillero">
+                   <img class="parrilla" src="https://i.imgur.com/2g1mKIw.jpg" alt="Abuela_Rosa">
                    <p>Ella vivía en San Nicolás, su casa, una modesta construcción ubicada en la cabecera de sus terrenos, rodeada de inmensas plantas de pacay, plátanos y guanabanos.<br/>
                     Cada vez que llegába a visitarla, me llamaba por mis dos nombres: ¿Carlos Enrique?, decía, luego de un fuerte abrazo, se sentaba conmigo y buscaba con desdén mis orejitas, mientras las acariciaba suavemente, me preguntaba por la salud de mis padres y hermanos.<br/>
                     Desde la puerta de su cuarto, donde usualmente se sentaba a darnos cariño, se podía oler los sabrosos plátanos manzanos que sólo ella cultivaba y eran completamente adictivos. Guardaba también: dulces, bizcochos, roscas acarameladas, que distribuía entre nosotros, parecía que siempre estaba preparada para nuestra visita.<br/>
@@ -125,10 +157,12 @@
                     Abuelita Rosa sabía lo mucho que me gustaba el pan, por eso cuando pasaba el panadero, no dudaba en intercambiar unos kilos de maíz, un pato o una gallina, por una buena ración de panes para tres o cuatro días y algunos otros productos de consumo. Muchos años después me enteraría que esa forma de comercio se llamaba trueque.<br/>
                     Todas estas vivencias hicieron que visitar a la abuelita sea una parte importante de mi infancia, ahora regreso a San Nicolás con mi familia cada vez que visitó a mis padres, aunque ya no están mis abuelas, sigue siendo el mejor lugar para relajarme y ver correr a mis pequeños hijos; frecuentemente me reconozco en ellos cuando corren tras un barco de papel que se aleja en la corriente de agua o cuando se organizan con sus primos para subir el cerro una vez mas.<br/>
                     San Nicolás sigue manteniendo su esencia, la misma esencia que espero mis hijos sepan transmitir a su descendencia.<br/>
-                                        
+
                    </p>
                </details>                
             </div>
+
+            <div id = "graphcomment" > </div> 
 
          </div>
     </section>
