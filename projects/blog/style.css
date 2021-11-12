@@ -79,7 +79,7 @@ flex-wrap: wrap;
 .parrafo{
     text-align: justify;    
     padding: 10px;   
-    width: 400px;
+    width: 2000px;
     height: auto;    
     margin: 20px;
     }
@@ -95,7 +95,7 @@ flex-wrap: wrap;
 }
 
 .parrilla {
-    width: 380px;
+    width: 1900px;
     height: auto;
     padding: 10px;
 }
@@ -137,6 +137,20 @@ flex-wrap: wrap;
     }
     .parrafo{          
         width: 700px;
+        height: auto;            
+        }
+    .parrafo h1, p, .content p, .content p b{
+        font-size: 1.6rem;
+        }
+}
+@media (min-width: 1024px) {
+    .parrilla {
+        width: 1180px;
+        height: auto;
+       
+    }
+    .parrafo{          
+        width: 1200px;
         height: auto;            
         }
     .parrafo h1, p, .content p, .content p b{
