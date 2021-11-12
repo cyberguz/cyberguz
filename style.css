@@ -306,6 +306,7 @@ h1 strong {
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    
   }
   .articulo a h1 {
     padding-top: 15px;
@@ -313,7 +314,8 @@ h1 strong {
     
   }
 .articulo a:lang(es) {
-      font-size: 8rem;      
+      font-size: 10rem;
+      line-height: 0.5;
 }
 #description p{
   padding-top: 20px;
@@ -335,6 +337,7 @@ h1 strong {
     color: white;
     margin-left: 10px;
     margin: 0px 0px 10px 0px;    
+    padding-left: 20px;
 }
 .contact >p:lang(es) {
   font-size: 3.5rem;
