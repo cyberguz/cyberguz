@@ -306,18 +306,15 @@ h1 strong {
     color: white;
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    
+    text-decoration: none;    
   }
   .articulo a h1 {
     padding-top: 15px;
-    padding-bottom: 15px;
-    
-    
+    padding-bottom: 15px;    
   }
 .articulo a:lang(es) {
       font-size: 10rem;
-      line-height: 0.5;
+      line-height: 0.3;
 }
 /*#description p{
   padding-top: 20px;
@@ -329,28 +326,26 @@ h1 strong {
     height: auto;
     width: 100%hw;
     display: flex;
-    justify-content: space-around;
-    
-     
+    justify-content: space-around;    
+    flex-wrap: wrap; 
 }
 .contact >p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     color: white;
     margin-left: 10px;
-    margin: 10px 0px 0px 20px; /*arriba - derecha - abajo - izquierda */    
+    margin: 10px 0px 10px 5px; /*arriba - derecha - abajo - izquierda */    
     padding-left: 20px;
 }
 .contact >p:lang(es) {
   font-size: 3.5rem;
-  line-height: 10%;
+  line-height: 50%;
 }
 .footer__img img {
     height: 50px;
     width: 60px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;       
+    margin-right: 5px;       
     flex-wrap:wrap; 
     cursor: pointer;     
 }
